@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug</title>
+</head>
+<body>
+  <div id="myDiv">
+    This is some text.
+  </div>
+
+  <script>
+    // Incorrect way to access a non-existent property
+    const text = myDiv.innerText;  
+    console.log(text);
+    //This will lead to an error because myDiv should be accessed using document.getElementById()
+  </script>
+</body>
+</html>
